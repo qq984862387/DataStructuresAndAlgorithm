@@ -31,7 +31,7 @@ namespace CDS002.IEnumerableWithGenericsDemo
             StreamReader sr;
             try
             {
-                sr = File.OpenText("C:/Users/liuxf/Documents/Tencent Files/984862387/FileRecv/SuanFa/tempFile.txt");
+                sr = File.OpenText("C:/Users/Administrator/Documents/Tencent Files/984862387/FileRecv/SuanFa/tempFile.txt");
             }
             catch (FileNotFoundException)
             {
@@ -115,7 +115,7 @@ namespace CDS002.IEnumerableWithGenericsDemo
             try
             {
                 stringsFound =
-                      from line in new StreamReaderEnumerable(@"C:/Users/liuxf/Documents/Tencent Files/984862387/FileRecv/SuanFa/tempFile.txt")
+                      from line in new StreamReaderEnumerable(@"C:/Users/Administrator/Documents/Tencent Files/984862387/FileRecv/SuanFa/tempFile.txt")
                       where line.Contains(keyString)
                       select line;
                 Console.WriteLine("数量：" + stringsFound.Count());
